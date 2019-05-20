@@ -26,6 +26,11 @@ const router = new Router({
       path: "/pieDemol",
       name: "PieDemol",
       component: resolve => require(["@/pages/pieDemol"], resolve)
+    },
+    {
+      path: "/scatter",
+      name: "Scatter",
+      component: resolve => require(["@/pages/scatter"], resolve)
     }
   ]
 });
