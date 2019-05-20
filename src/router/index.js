@@ -13,9 +13,9 @@ const router = new Router({
       component: resolve => require(["@/pages"], resolve)
     },
     {
-      path: "/demol",
-      name: "Demol",
-      component: resolve => require(["@/pages/demol"], resolve)
+      path: "/candlestick",
+      name: "Candlestick",
+      component: resolve => require(["@/pages/candlestick"], resolve)
     },
     {
       path: "/lineDemol",
@@ -31,7 +31,12 @@ const router = new Router({
       path: "/scatter",
       name: "Scatter",
       component: resolve => require(["@/pages/scatter"], resolve)
-    }
+    },
+    // {
+    //   path: "/scattermap",
+    //   name: "scatterMap",
+    //   component: resolve => require(["@/pages/scatter/scattermap.vue"], resolve)
+    // }
   ]
 });
 router.beforeEach((to, from, next) => {
